@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f1419;
+  color: #e6e6e6;
+}
+
+.app {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+header p {
+  color: #9aa4ad;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+
+.panel {
+  background: #171d24;
+  border: 1px solid #2a323b;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.panel h2 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+button:hover {
+  background: #2c5282;
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #333d47;
+}
+
+button.secondary:hover {
+  background: #40495424;
+}
+
+select, input[type="text"] {
+  background: #0f1419;
+  color: #e6e6e6;
+  border: 1px solid #2a323b;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.85rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+.status-line {
+  font-size: 0.8rem;
+  color: #9aa4ad;
+  margin-top: 8px;
+  white-space: pre-wrap;
+}
+
+.chat-log {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.msg {
+  padding: 10px 14px;
+  border-radius: 8px;
+  line-height: 1.4;
+  font-size: 0.92rem;
+}
+
+.msg.user {
+  background: #234a70;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.msg.assistant {
+  background: #1f2731;
+  border: 1px solid #2a323b;
+}
+
+.meta {
+  font-size: 0.72rem;
+  color: #8592a3;
+  margin-top: 6px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.compare-table th, .compare-table td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #2a323b;
+  vertical-align: top;
+}

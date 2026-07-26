@@ -1,0 +1,22 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+backend/.env
+frontend/.env
+
+# Node
+frontend/node_modules/
+
+# VS Code
+.vscode/
+
+# Build output
+frontend/dist/
+backend/.pytest_cache/

@@ -1,0 +1,106 @@
+{
+  "dataset_name": "Pakistan Ecology Dataset",
+  "description": "Narrative documents covering Pakistan's ecosystems, protected areas, wildlife, environmental threats, and conservation organizations. Designed for Graph RAG entity/relationship extraction with LangChain LLMGraphTransformer.",
+  "documents": [
+    {
+      "id": "doc_001",
+      "title": "Indus River Delta",
+      "text": "The Indus River Delta, located in Sindh province where the Indus River meets the Arabian Sea, is one of the largest arid-climate deltas in the world. It supports extensive mangrove forests, primarily composed of Avicennia marina. The delta provides critical habitat for the Indus River Dolphin, a freshwater dolphin species now largely restricted to the lower Indus. Reduced freshwater flow, caused by upstream irrigation and dam construction such as the Tarbela Dam and Kotri Barrage, has severely degraded the delta's mangrove ecosystem. WWF-Pakistan has led mangrove restoration projects in the delta since the early 2000s, working alongside the Sindh Forest Department."
+    },
+    {
+      "id": "doc_002",
+      "title": "Indus River Dolphin",
+      "text": "The Indus River Dolphin (Platanista gangetica minor) is a critically endangered freshwater dolphin endemic to the Indus River system in Pakistan. Its population is concentrated in a stretch of the Indus between the Chashma and Sukkur Barrages, an area protected as the Indus Dolphin Reserve. The species faces threats from water pollution, entanglement in fishing nets, and habitat fragmentation caused by irrigation barrages. WWF-Pakistan and the Sindh Wildlife Department jointly conduct annual dolphin population surveys and rescue operations to relocate stranded dolphins from irrigation canals back to the main river channel."
+    },
+    {
+      "id": "doc_003",
+      "title": "Deosai National Park",
+      "text": "Deosai National Park, located in Gilgit-Baltistan at an average elevation of 4,114 meters, is one of the highest plateaus in the world and is often called the 'Land of Giants'. It is a critical habitat for the Himalayan brown bear, whose population has recovered significantly since the park's establishment in 1993 through conservation efforts led by the Himalayan Wildlife Foundation. The park also hosts the Himalayan ibex, golden marmot, and numerous migratory bird species. Deosai's wetlands feed into the Indus River basin via the Astore River. Climate change and glacial retreat in the surrounding mountains threaten the plateau's water balance."
+    },
+    {
+      "id": "doc_004",
+      "title": "Snow Leopard in the Karakoram and Himalayas",
+      "text": "The snow leopard (Panthera uncia) inhabits the high-altitude mountain ranges of northern Pakistan, including the Karakoram, Himalayas, and Hindu Kush ranges in Gilgit-Baltistan and Khyber Pakhtunkhwa. Its primary prey species include the Himalayan ibex and blue sheep. The Snow Leopard Foundation, in partnership with WWF-Pakistan, runs livestock insurance schemes in villages near Khunjerab National Park to reduce retaliatory killing of snow leopards by herders. Poaching for pelts and body parts, along with habitat loss from climate-driven treeline shifts, remain major threats to the species."
+    },
+    {
+      "id": "doc_005",
+      "title": "Khunjerab National Park",
+      "text": "Khunjerab National Park, situated in Gilgit-Baltistan near the Pakistan-China border, is one of the highest national parks in the world, reaching elevations above 4,700 meters at the Khunjerab Pass. It was established in 1975 to protect the Marco Polo sheep and snow leopard populations. The park lies along the Karakoram Highway, and increased tourist and trade traffic along this route has raised concerns about habitat disturbance. The park is jointly managed by the Gilgit-Baltistan Forest, Wildlife and Environment Department in collaboration with international conservation NGOs."
+    },
+    {
+      "id": "doc_006",
+      "title": "Chitral Gol National Park and the Markhor",
+      "text": "Chitral Gol National Park in Khyber Pakhtunkhwa was established primarily to protect the markhor, Pakistan's national animal and a species of wild goat known for its distinctive spiral horns. Conservation trophy hunting programs, regulated by the Khyber Pakhtunkhwa Wildlife Department, have funded community-based conservation and contributed to a substantial recovery of the markhor population since the 1990s. The park's steep coniferous forests also support the snow leopard, which preys on markhor in the higher elevations. The markhor population recovery in Chitral is frequently cited by the IUCN as a conservation success story."
+    },
+    {
+      "id": "doc_007",
+      "title": "Margalla Hills National Park",
+      "text": "Margalla Hills National Park lies at the foothills of the Himalayas, bordering the capital city of Islamabad. Established in 1980, it is administered by the Islamabad Wildlife Management Board. The park's subtropical broadleaf forest supports leopards, barking deer, and over 250 species of birds. Rapid urban expansion of Islamabad and illegal construction within park boundaries have led to habitat encroachment. The Islamabad Wildlife Management Board has partnered with WWF-Pakistan on reforestation and anti-encroachment campaigns in the park since 2016."
+    },
+    {
+      "id": "doc_008",
+      "title": "Thar Desert Ecosystem",
+      "text": "The Thar Desert, spanning parts of Sindh province, is a semi-arid region characterized by sand dunes and drought-resistant vegetation such as the khejri tree. It supports the chinkara gazelle and the houbara bustard, a migratory bird species that winters in the Thar region after breeding in Central Asia. Coal mining operations in the Thar coalfield, developed by the Sindh Engro Coal Mining Company, have raised concerns about groundwater depletion and habitat disruption for desert wildlife. The Sindh Wildlife Department regulates houbara bustard hunting permits, which remain a source of controversy due to the species' declining population."
+    },
+    {
+      "id": "doc_009",
+      "title": "Houbara Bustard Conservation",
+      "text": "The houbara bustard is a migratory bird that travels from Central Asia and winters in the deserts of Sindh and Balochistan, including the Thar Desert and Chagai Hills. The species is listed as Vulnerable by the IUCN due to overhunting, historically associated with falconry hunting parties. Pakistan's Ministry of Climate Change has periodically issued and revoked special hunting permits for houbara bustard, generating disputes between provincial wildlife departments and conservation organizations such as WWF-Pakistan, which advocates for stricter protection."
+    },
+    {
+      "id": "doc_010",
+      "title": "Kirthar National Park",
+      "text": "Kirthar National Park, located in the Kirthar Range of Sindh province, is one of the largest national parks in Pakistan. It provides habitat for the Sindh ibex, urial (a wild sheep species), and chinkara gazelle. The park's arid mountainous terrain receives minimal rainfall, and water scarcity during drought years has led to competition between wildlife and livestock grazing by local pastoralist communities. The Sindh Wildlife Department manages the park and has implemented community-based grazing management programs to reduce this conflict."
+    },
+    {
+      "id": "doc_011",
+      "title": "Mangrove Forests of the Sindh Coast",
+      "text": "The mangrove forests along Sindh's coastline, concentrated in the Indus Delta and Sonmiani Bay in Balochistan, act as critical nurseries for shrimp and fish species that support Pakistan's coastal fishing industry. Mangroves also serve as a natural buffer against cyclones and coastal erosion along the Arabian Sea. Deforestation for fuelwood and camel grazing has reduced mangrove cover significantly since the 1980s. WWF-Pakistan and the Sindh Forest Department have run large-scale mangrove afforestation campaigns, planting millions of Avicennia marina saplings along the delta and coast."
+    },
+    {
+      "id": "doc_012",
+      "title": "Lal Suhanra National Park",
+      "text": "Lal Suhanra National Park in Punjab province, near Bahawalpur, is a UNESCO Biosphere Reserve encompassing desert, forest plantation, and wetland habitats along the Cholistan Desert margin. It hosts a captive breeding program for the blackbuck antelope, a species that had gone locally extinct in Pakistan before being reintroduced from stock provided by Texas ranches in the 1970s. The park also contains wetlands fed by the Sutlej River that support migratory waterfowl. The Punjab Wildlife and Parks Department manages the reserve."
+    },
+    {
+      "id": "doc_013",
+      "title": "Climate Change Impacts on Pakistan's Glaciers",
+      "text": "Pakistan contains more glacial ice than any country outside the polar regions, concentrated in the Karakoram, Himalaya, and Hindu Kush mountain ranges of Gilgit-Baltistan and Khyber Pakhtunkhwa. These glaciers feed the Indus River system, which supplies over 90% of Pakistan's irrigation water. Accelerated glacial melt due to climate change has increased the frequency of Glacial Lake Outburst Floods (GLOFs), threatening downstream communities and ecosystems including Deosai National Park's wetlands. Pakistan's Ministry of Climate Change has partnered with the United Nations Development Programme on GLOF early-warning systems in Gilgit-Baltistan."
+    },
+    {
+      "id": "doc_014",
+      "title": "Deforestation in Khyber Pakhtunkhwa",
+      "text": "Khyber Pakhtunkhwa's coniferous forests, including those surrounding Chitral Gol National Park and the Swat Valley, have experienced significant deforestation due to illegal logging, particularly during periods of weak law enforcement. Forest loss has degraded habitat connectivity for the snow leopard and markhor populations that move between protected areas. In response, the Khyber Pakhtunkhwa government launched the Billion Tree Tsunami reforestation initiative in 2014, later expanded nationally as the Ten Billion Tree Tsunami Programme by Pakistan's Ministry of Climate Change, aiming to restore forest cover across the province."
+    },
+    {
+      "id": "doc_015",
+      "title": "Ten Billion Tree Tsunami Programme",
+      "text": "The Ten Billion Tree Tsunami Programme is a nationwide afforestation initiative launched by Pakistan's Ministry of Climate Change, building on the success of the earlier Billion Tree Tsunami project in Khyber Pakhtunkhwa. The program targets degraded forest land across Punjab, Sindh, Balochistan, and Gilgit-Baltistan, with a focus on native species restoration in areas surrounding national parks such as Margalla Hills National Park and Chitral Gol National Park. WWF-Pakistan has provided technical monitoring support to verify survival rates of planted saplings under the program."
+    },
+    {
+      "id": "doc_016",
+      "title": "Balochistan's Juniper Forests",
+      "text": "The Ziarat Juniper Forest in Balochistan is one of the largest juniper forests in the world, with some trees estimated to be over 5,000 years old. These slow-growing forests are threatened by illegal cutting for fuelwood, since alternative energy sources are scarce in the surrounding arid region. The Balochistan Forest and Wildlife Department, with support from the IUCN, has introduced solar energy programs in nearby villages to reduce dependence on juniper wood for fuel. The forest also provides habitat for the Balochistan black bear and various raptor species."
+    },
+    {
+      "id": "doc_017",
+      "title": "Ramsar Wetlands of Pakistan",
+      "text": "Pakistan has designated numerous wetlands as Ramsar Sites of International Importance, including Haleji Lake and Keenjhar Lake in Sindh, and the Indus Delta itself. Haleji Lake, near Thatta, is a critical stopover for migratory waterfowl traveling along the Central Asian Flyway, including species such as the greater flamingo and pintail duck. Encroachment from agricultural expansion and industrial pollution from nearby Karachi have degraded water quality in several of these Ramsar sites. WWF-Pakistan monitors bird populations at Haleji Lake annually in coordination with the Sindh Wildlife Department."
+    },
+    {
+      "id": "doc_018",
+      "title": "Water Scarcity and the Indus Basin",
+      "text": "The Indus River, originating from glaciers in the Tibetan Plateau and flowing through Gilgit-Baltistan into Punjab and Sindh before reaching the Arabian Sea at the Indus Delta, is Pakistan's primary freshwater source. The Indus Waters Treaty, signed with India in 1960, governs the allocation of the river's flow between the two countries. Reduced downstream flow due to upstream damming and climate-driven glacial changes has intensified water scarcity, directly affecting the Indus Delta's mangrove ecosystem and the habitat range of the Indus River Dolphin."
+    },
+    {
+      "id": "doc_019",
+      "title": "WWF-Pakistan's Conservation Role",
+      "text": "WWF-Pakistan, a chapter of the World Wide Fund for Nature, has operated in the country since 1970 and works across multiple ecological programs including mangrove restoration in the Indus Delta, Indus River Dolphin conservation, snow leopard protection in partnership with the Snow Leopard Foundation, and wetland monitoring at Ramsar sites such as Haleji Lake. The organization frequently collaborates with provincial wildlife departments, including the Sindh Wildlife Department and Khyber Pakhtunkhwa Wildlife Department, as well as with Pakistan's federal Ministry of Climate Change on national policy initiatives like the Ten Billion Tree Tsunami Programme."
+    },
+    {
+      "id": "doc_020",
+      "title": "Ministry of Climate Change and National Policy",
+      "text": "Pakistan's Ministry of Climate Change oversees national environmental policy, including glacier monitoring, the Ten Billion Tree Tsunami Programme, and coordination on international climate agreements. It works alongside provincial bodies such as the Sindh Wildlife Department, Khyber Pakhtunkhwa Wildlife Department, Punjab Wildlife and Parks Department, and the Balochistan Forest and Wildlife Department, which retain primary jurisdiction over wildlife and protected areas within their provinces. The ministry has also partnered with the United Nations Development Programme on Glacial Lake Outburst Flood early-warning systems in Gilgit-Baltistan."
+    }
+  ]
+}
