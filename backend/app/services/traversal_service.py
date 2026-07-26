@@ -43,19 +43,41 @@ class TraversalService:
             )
             if matches:
                 return matches[0]["name"]
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"[traversal] Vector-based anchor matching failed, falling back: {e}")
 
-        # Fallback: naive substring match against all node names
+        # Fallback: word-overlap scoring instead of requiring an exact
+        # substring match (which breaks on typos or partial phrasing,
+        # e.g. "indus water dolphin" instead of "Indus River Dolphin").
         rows = neo4j_service.run(
             "MATCH (n {schema_mode: $mode}) RETURN n.name AS name",
             {"mode": schema_mode},
         )
-        question_lower = question.lower()
+        if not rows:
+            return None
+
+        STOPWORDS = {
+            "how", "does", "do", "the", "a", "an", "is", "are", "in", "on",
+            "of", "to", "and", "affect", "affects", "what", "why", "when",
+            "where", "which", "this", "that", "with", "for", "impact",
+        }
+        question_words = {
+            w.strip(".,?!") for w in question.lower().split() if w.strip(".,?!") not in STOPWORDS
+        }
+
+        best_name = None
+        best_score = 0
         for row in rows:
-            if row["name"] and row["name"].lower() in question_lower:
-                return row["name"]
-        return rows[0]["name"] if rows else None
+            name = row["name"]
+            if not name:
+                continue
+            name_words = {w.strip(".,?!") for w in name.lower().split()}
+            overlap = len(question_words & name_words)
+            if overlap > best_score:
+                best_score = overlap
+                best_name = name
+
+        return best_name if best_name else rows[0]["name"]
 
     def answer(self, question: str, schema_mode: str = "predefined", hops: int = 3) -> dict:
         anchor = self._find_anchor(question, schema_mode)
