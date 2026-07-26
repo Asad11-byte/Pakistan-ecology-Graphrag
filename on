@@ -1,0 +1,43 @@
+warning: in the working copy of 'vercel.json', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/vercel.json b/vercel.json[m
+[1mindex 0ae32e5..9ebb7d3 100644[m
+[1m--- a/vercel.json[m
+[1m+++ b/vercel.json[m
+[36m@@ -1,26 +1,13 @@[m
+ {[m
+[31m-  "version": 2,[m
+[31m-  "builds": [[m
+[31m-    {[m
+[31m-      "src": "api/index.py",[m
+[31m-      "use": "@vercel/python",[m
+[31m-      "config": {[m
+[31m-        "includeFiles": "backend/**"[m
+[31m-      }[m
+[31m-    },[m
+[31m-    {[m
+[31m-      "src": "frontend/package.json",[m
+[31m-      "use": "@vercel/static-build",[m
+[31m-      "config": {[m
+[31m-        "distDir": "dist"[m
+[31m-      }[m
+[32m+[m[32m  "buildCommand": "cd frontend && npm install && npm run build",[m
+[32m+[m[32m  "outputDirectory": "frontend/dist",[m
+[32m+[m[32m  "functions": {[m
+[32m+[m[32m    "api/index.py": {[m
+[32m+[m[32m      "includeFiles": "backend/**"[m
+     }[m
+[31m-  ],[m
+[31m-  "routes": [[m
+[31m-    { "src": "/api/(.*)", "dest": "/api/index.py" },[m
+[31m-    { "src": "/assets/(.*)", "dest": "/frontend/dist/assets/$1" },[m
+[31m-    { "src": "/favicon.ico", "dest": "/frontend/dist/favicon.ico" },[m
+[31m-    { "handle": "filesystem" },[m
+[31m-    { "src": "/(.*)", "dest": "/frontend/dist/index.html" }[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "rewrites": [[m
+[32m+[m[32m    { "source": "/api/(.*)", "destination": "/api/$1" },[m
+[32m+[m[32m    { "source": "/(.*)", "destination": "/index.html" }[m
+   ][m
+[31m-}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m

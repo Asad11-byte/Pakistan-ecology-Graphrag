@@ -18,7 +18,7 @@ ALLOWED_ORIGINS = [
     "http://localhost:5173",
 
     # Replace with your actual Vercel production domain after first deploy
-    "https://your-app.vercel.app",
+    "https://pakistan-ecology-graphrag.vercel.app",
 ]
 
 app.add_middleware(
