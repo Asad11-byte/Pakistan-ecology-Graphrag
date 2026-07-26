@@ -6,6 +6,11 @@ Unlike traditional vector-based RAG, this system represents knowledge as an expl
 
 ---
 
+## Live Demo
+
+- **Tap here :** https://pak-ecology-graphrag.vercel.app
+
+
 ## Table of Contents
 
 - [Why Graph RAG](#why-graph-rag)
